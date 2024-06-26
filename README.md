@@ -2,6 +2,18 @@
 
 Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) from the Hugging Face model hub for visual question answering. The used model can be run only on GPUs (A100).
 
+## Project Structure
+
+The project is structured as follows:
+
+- `app.py`: The main file that contains the Gradio application for visual question answering.
+- `model.py`: The file that contains the visual question answering model.
+- `requirements.txt`: The file that contains the required dependencies for the project.
+- `LICENSE`: The license file for the project.
+- `README.md`: The README file that contains information about the project.
+- `assets`: The folder that contains the screenshots for working on the application.
+- `images`: The folder that contains the images for testing the application.
+
 ## Tech Stack
 
 - Python (for the programming language)

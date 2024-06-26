@@ -7,7 +7,7 @@ Visual Question Answering is the task of answering open-ended questions based on
 The project is structured as follows:
 
 - `app.py`: The main file that contains the Gradio application for visual question answering.
-- `model.py`: The file that contains the visual question answering model.
+- `model.py`: The file that contains the visual question-answering model.
 - `requirements.txt`: The file that contains the required dependencies for the project.
 - `LICENSE`: The license file for the project.
 - `README.md`: The README file that contains information about the project.
@@ -17,7 +17,7 @@ The project is structured as follows:
 ## Tech Stack
 
 - Python (for the programming language)
-- Hugging Face Transformers Library (for the visual question answering model)
+- Hugging Face Transformers Library (for the visual question-answering model)
 - Gradio (for the web application)
 - Hugging Face Spaces (for hosting the gradio application)
 

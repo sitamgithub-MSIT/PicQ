@@ -1,6 +1,6 @@
 # PicQ
 
-Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) from the Hugging Face model hub for visual question answering. The used model can be run only on GPUs (A100).
+Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) from the Hugging Face model hub for visual question answering. The model also supports multimodal conversation in over 30 languages, including English, Chinese, French, Spanish, and German. With the help of quantization, compilation optimizations, and several efficient inference techniques on CPUs and NPUs, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) can be efficiently deployed on end-side devices.
 
 ## Project Structure
 

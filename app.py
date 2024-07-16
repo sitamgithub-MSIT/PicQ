@@ -13,8 +13,8 @@ answer = gr.Textbox(label="Predicted answer")
 # Examples for the interface
 examples = [
     ["images/cat.jpg", "How many cats are there?"],
-    ["images/dog.jpg", "What color is the dog?"],
-    ["images/bird.jpg", "What is the bird doing?"],
+    ["images/dog.jpg", "¿De qué color es el perro?"],
+    ["images/bird.jpg", "Que fait l'oiseau ?"],
 ]
 
 # Title, description, and article for the interface

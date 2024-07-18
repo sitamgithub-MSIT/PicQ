@@ -8,7 +8,7 @@ image = gr.Image(type="pil", label="Image")
 question = gr.Textbox(label="Question")
 
 # Output for the interface
-answer = gr.Textbox(label="Predicted answer")
+answer = gr.Textbox(label="Predicted answer", show_label=True, show_copy_button=True)
 
 # Examples for the interface
 examples = [

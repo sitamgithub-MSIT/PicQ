@@ -2,5 +2,6 @@ Pillow==10.1.0
 torch==2.1.2
 torchvision==0.16.2
 transformers==4.40.0
+deepspeed==0.12.6
 sentencepiece==0.1.99
 gradio

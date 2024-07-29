@@ -26,12 +26,13 @@ The project is structured as follows:
 To get started with this project, follow the steps below:
 
 1. Clone the repository: `git clone https://github.com/sitamgithub-MSIT/PicQ.git`
-2. Create a virtual environment: `python -m venv tutorial-env`
-3. Activate the virtual environment: `tutorial-env\Scripts\activate`
-4. Install the required dependencies: `pip install -r requirements.txt`
-5. Run the Gradio application: `python app.py`
+2. Change the directory: `cd PicQ`
+3. Create a virtual environment: `python -m venv tutorial-env`
+4. Activate the virtual environment: `tutorial-env\Scripts\activate`
+5. Install the required dependencies: `pip install -r requirements.txt`
+6. Run the Gradio application: `python app.py`
 
-Now, open up your local host and you should see the web application running. For more information, refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
+Now, open up your local host and you should see the web application running. If you would like more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
 
 ## Usage
 
@@ -39,7 +40,7 @@ The web application allows you to input an image and a question. The model will 
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute to this project, please raise an issue to discuss the changes you would like to make. Once the changes are approved, you can create a pull request.
+Contributions are welcome! If you would like to contribute to this project, please raise an issue to discuss the changes you want to make. Once the changes are approved, you can create a pull request.
 
 ## License
 

@@ -1,8 +1,8 @@
 # PicQ
 
-Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-V-2_6](https://huggingface.co/openbmb/MiniCPM-V-2_6) from the Hugging Face model hub for visual question answering.
+Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [**MiniCPM-V-2_6**](https://huggingface.co/openbmb/MiniCPM-V-2_6) from the Hugging Face model hub for visual question answering.
 
-[MiniCPM-V-2_6](https://huggingface.co/openbmb/MiniCPM-V-2_6) is the latest model in the MiniCPM-V series, built on SigLip-400M and Qwen2-7B with a total of 8B parameters. It introduces new features for multi-image and video understanding. It also supports multilingual capabilities and produces fewer tokens than most models, improving inference speed, first-token latency, memory usage, and power consumption. It is easy to use in various ways, including CPU inference, quantized models, and online demos.
+[**MiniCPM-V-2_6**](https://huggingface.co/openbmb/MiniCPM-V-2_6) is the latest model in the MiniCPM-V series, built on **SigLip-400M** and **Qwen2-7B** with a total of 8B parameters. It introduces new features for multi-image and video understanding. It also supports multilingual capabilities and produces fewer tokens than most models, improving inference speed, first-token latency, memory usage, and power consumption. It is easy to use in various ways, including CPU inference, quantized models, and online demos.
 
 ## Project Structure
 
@@ -29,6 +29,7 @@ The project is structured as follows:
 ## Tech Stack
 
 - Python (for the programming language)
+- PyTorch (for the deep learning framework)
 - Hugging Face Transformers Library (for the visual question-answering model)
 - Gradio (for the web application)
 - Hugging Face Spaces (for hosting the gradio application)

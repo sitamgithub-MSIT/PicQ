@@ -20,7 +20,8 @@ The project is structured as follows:
   - `exception.py`: This file contains the exception handling for the project.
 
 - `app.py`: The main file that contains the Gradio application for visual question answering.
-- `requirements.txt`: The file containing the project's required dependencies.
+- `model.py`: The file that contains the visual question-answering model.
+- `requirements.txt`: The file that contains the required dependencies for the project.
 - `LICENSE`: The license file for the project.
 - `README.md`: The README file that contains information about the project.
 - `assets`: The folder that contains the screenshots for working on the application.
@@ -44,9 +45,7 @@ To get started with this project, follow the steps below:
 5. Install the required dependencies: `pip install -r requirements.txt`
 6. Run the Gradio application: `python app.py`
 
-Now, open up your local host and see the web application running. For more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
-
-**Note**: The application is hosted on Hugging Face Spaces running on a GPU. For local use, you are expected to have a GPU for running the application. If you do not have a GPU, you can explore the CPU inference option provided by the model [here](https://huggingface.co/collections/openbmb/minicpm-65d48bf958302b9fd25b698f).
+Now, open up your local host and you should see the web application running. If you would like more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
 
 ## Usage
 

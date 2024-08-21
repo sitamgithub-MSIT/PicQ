@@ -8,9 +8,9 @@ Visual Question Answering is the task of answering open-ended questions based on
 
 The project is structured as follows:
 
-- `src`: The folder that contains the source code for the project.
+- `src\`: The folder that contains the source code for the project.
 
-  - `app`: The folder that contains the source code for the main functionality of the application.
+  - `app\`: The folder that contains the source code for the main functionality of the application.
 
     - `model.py`: The file that contains the code for loading the model and the tokenizer.
     - `response.py`: The file that contains the function for generating the response for the input image and question.

@@ -8,7 +8,7 @@ The project is structured as follows:
 
 - `app.py`: The main file that contains the Gradio application for visual question answering.
 - `model.py`: The file that contains the visual question-answering model.
-- `requirements.txt`: The file that contains the required dependencies for the project.
+- `requirements.txt`: The file containing the project's required dependencies.
 - `LICENSE`: The license file for the project.
 - `README.md`: The README file that contains information about the project.
 - `assets`: The folder that contains the screenshots for working on the application.
@@ -32,7 +32,7 @@ To get started with this project, follow the steps below:
 5. Install the required dependencies: `pip install -r requirements.txt`
 6. Run the Gradio application: `python app.py`
 
-Now, open up your local host and you should see the web application running. If you would like more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
+Now, open up your local host and see the web application running. For more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
 
 ## Usage
 

@@ -1,14 +1,26 @@
 # PicQ
 
-Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) from the Hugging Face model hub for visual question answering. The model also supports multimodal conversation in over 30 languages, including English, Chinese, French, Spanish, and German. With the help of quantization, compilation optimizations, and several efficient inference techniques on CPUs and NPUs, [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) can be efficiently deployed on end-side devices.
+Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [MiniCPM-V-2_6](https://huggingface.co/openbmb/MiniCPM-V-2_6) from the Hugging Face model hub for visual question answering.
+
+[MiniCPM-V-2_6](https://huggingface.co/openbmb/MiniCPM-V-2_6) is the latest model in the MiniCPM-V series, built on SigLip-400M and Qwen2-7B with 8B parameters. It introduces new features for multi-image and video understanding. It also supports multilingual capabilities and produces fewer tokens than most models, improving inference speed, first-token latency, memory usage, and power consumption. It is easy to use in various ways, including CPU inference, quantized models, and online demos.
 
 ## Project Structure
 
 The project is structured as follows:
 
+- `src`: The folder that contains the source code for the project.
+
+  - `app` : The folder that contains the source code for main functionality of the application.
+
+    - `model.py`: The file that contains the code for loading the model and the tokenizer.
+    - `response.py`: The file that contains the function for generating the response for the input image and question.
+
+  - `config.py`: This file contains the configuration for the used model.
+  - `logger.py`: This file contains the logging configuration for the project.
+  - `exception.py`: This file contains the exception handling for the project.
+
 - `app.py`: The main file that contains the Gradio application for visual question answering.
-- `model.py`: The file that contains the visual question-answering model.
-- `requirements.txt`: The file that contains the required dependencies for the project.
+- `requirements.txt`: The file containing the project's required dependencies.
 - `LICENSE`: The license file for the project.
 - `README.md`: The README file that contains information about the project.
 - `assets`: The folder that contains the screenshots for working on the application.
@@ -32,7 +44,9 @@ To get started with this project, follow the steps below:
 5. Install the required dependencies: `pip install -r requirements.txt`
 6. Run the Gradio application: `python app.py`
 
-Now, open up your local host and you should see the web application running. If you would like more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
+Now, open up your local host and see the web application running. For more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
+
+**Note**: The application is hosted on Hugging Face Spaces running on a GPU. For local use, you are expected to have a GPU for running the application. If you do not have a GPU, you can explore the CPU inference option provided by the model [here](https://huggingface.co/collections/openbmb/minicpm-65d48bf958302b9fd25b698f).
 
 ## Usage
 

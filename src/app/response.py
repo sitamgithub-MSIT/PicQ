@@ -1,5 +1,6 @@
 # Necessary imports
 import sys
+import gradio as gr
 import spaces
 
 # Local imports
@@ -37,6 +38,10 @@ def describe_image(image: str, question: str) -> str:
         str: The generated answer to the question.
     """
     try:
+        # Check if image or question is None
+        if not image or not question:
+            gr.Warning("Please provide an image and a question.")
+
         # Message format for the model
         msgs = [{"role": "user", "content": [image, question]}]
 

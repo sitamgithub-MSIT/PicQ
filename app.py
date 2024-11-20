@@ -32,11 +32,12 @@ interface = gr.Interface(
     inputs=[image, question],
     outputs=answer,
     examples=examples,
-    cache_examples="lazy",
+    cache_examples=True,
+    cache_mode="lazy",
     title=title,
     description=description,
     article=article,
     theme="JohnSmith9982/small_and_pretty",
-    allow_flagging="never",
+    flagging_mode="never",
 )
 interface.launch(debug=False)

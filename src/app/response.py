@@ -7,7 +7,6 @@ import spaces
 from src.config import (
     device,
     model_name,
-    system_prompt,
     sampling,
     stream,
     top_p,
@@ -21,8 +20,8 @@ from src.logger import logging
 from src.exception import CustomExceptionHandling
 
 
-# Model and tokenizer
-model, tokenizer = load_model_and_tokenizer(model_name, device)
+# Model, tokenizer and processor
+model, tokenizer, processor = load_model_and_tokenizer(model_name, device)
 
 
 @spaces.GPU(duration=120)
@@ -50,6 +49,7 @@ def describe_image(image: str, question: str) -> str:
             image=None,
             msgs=msgs,
             tokenizer=tokenizer,
+            processor=processor,
             sampling=sampling,
             stream=stream,
             top_p=top_p,
@@ -57,7 +57,6 @@ def describe_image(image: str, question: str) -> str:
             temperature=temperature,
             repetition_penalty=repetition_penalty,
             max_new_tokens=max_new_tokens,
-            system_prompt=system_prompt,
         )
 
         # Log the successful generation of the answer

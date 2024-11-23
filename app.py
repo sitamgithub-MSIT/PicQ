@@ -6,18 +6,45 @@ import gradio as gr
 from src.app.response import describe_image
 
 
-# Image and text inputs for the interface
+# Image, text query, and input parameters
 image = gr.Image(type="pil", label="Image")
 question = gr.Textbox(label="Question", placeholder="Enter your question here")
+temperature = gr.Slider(
+    minimum=0.01, maximum=1.99, step=0.01, value=0.7, label="Temperature"
+)
+top_p = gr.Slider(minimum=0, maximum=1, step=0.01, value=0.8, label="Top P")
+top_k = gr.Slider(minimum=0, maximum=1000, step=1, value=100, label="Top K")
+max_new_tokens = gr.Slider(minimum=1, maximum=4096, step=1, value=512, label="Max Tokens")
 
 # Output for the interface
 answer = gr.Textbox(label="Predicted answer", show_label=True, show_copy_button=True)
 
 # Examples for the interface
 examples = [
-    ["images/cat.jpg", "How many cats are there?"],
-    ["images/dog.jpg", "¿De qué color es el perro?"],
-    ["images/bird.jpg", "Que fait l'oiseau ?"],
+    [
+        "images/cat.jpg",
+        "How many cats are there?",
+        0.7,
+        0.8,
+        100,
+        512,
+    ],
+    [
+        "images/dog.jpg",
+        "¿De qué color es el perro?",
+        0.7,
+        0.8,
+        100,
+        512,
+    ],
+    [
+        "images/bird.jpg",
+        "Que fait l'oiseau ?",
+        0.7,
+        0.8,
+        100,
+        512,
+    ],
 ]
 
 # Title, description, and article for the interface
@@ -29,7 +56,7 @@ article = "<p style='text-align: center'><a href='https://github.com/OpenBMB/Min
 # Launch the interface
 interface = gr.Interface(
     fn=describe_image,
-    inputs=[image, question],
+    inputs=[image, question, temperature, top_p, top_k, max_new_tokens],
     outputs=answer,
     examples=examples,
     cache_examples=True,

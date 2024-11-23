@@ -49,7 +49,7 @@ examples = [
 
 # Title, description, and article for the interface
 title = "Visual Question Answering"
-description = "Gradio Demo for the MiniCPM-V 2.6 Vision Language Understanding and Generation model. This model can answer questions about images in natural language. To use it, simply upload your image, type a question, and click 'submit', or click one of the examples to load them. Read more at the links below."
+description = "Gradio Demo for the MiniCPM-V 2.6 Vision Language Understanding and Generation model. This model can answer questions about images in natural language. To use it, upload your image, type a question, select associated parameters, use the default values, click 'Submit', or click one of the examples to load them. You can read more at the links below."
 article = "<p style='text-align: center'><a href='https://github.com/OpenBMB/MiniCPM-V' target='_blank'>Model GitHub Repo</a> | <a href='https://huggingface.co/openbmb/MiniCPM-V-2_6' target='_blank'>Model Page</a></p>"
 
 

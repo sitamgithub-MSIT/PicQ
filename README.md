@@ -47,7 +47,9 @@ To get started with this project, follow the steps below:
 
 Now, open up your local host and see the web application running. For more information, please refer to the Gradio documentation [here](https://www.gradio.app/docs/interface). Also, a live version of the application can be found [here](https://huggingface.co/spaces/sitammeur/PicQ).
 
-**Note**: The application is hosted on Hugging Face Spaces running on a GPU. For local use, you are expected to have a GPU for running the application. If you do not have a GPU, you can explore the CPU inference option provided by the model [here](https://huggingface.co/collections/openbmb/minicpm-65d48bf958302b9fd25b698f).
+**Note**: You need Hugging Face access token to run the application. You can get the token by signing up on the Hugging Face website and creating a new token from the settings page. After getting the token, you can set it as an environment variable `ACCESS_TOKEN` in your system by creating a `.env` file in the root directory of the project. Check the `.env.example` file for reference.
+
+The application is hosted on Hugging Face Spaces running on a GPU. For local use, you are expected to have a GPU for running the application. If you do not have a GPU, you can explore the CPU inference option provided by the model [here](https://huggingface.co/collections/openbmb/minicpm-65d48bf958302b9fd25b698f).
 
 ## Usage
 

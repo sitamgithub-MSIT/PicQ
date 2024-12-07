@@ -11,13 +11,13 @@ from src.config import (
     stream,
     repetition_penalty,
 )
-from src.app.model import load_model_and_tokenizer
+from src.app.model import load_model_tokenizer_and_processor
 from src.logger import logging
 from src.exception import CustomExceptionHandling
 
 
 # Model, tokenizer and processor
-model, tokenizer, processor = load_model_and_tokenizer(model_name, device)
+model, tokenizer, processor = load_model_tokenizer_and_processor(model_name, device)
 
 
 @spaces.GPU(duration=120)

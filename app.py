@@ -64,7 +64,7 @@ interface = gr.Interface(
     title=title,
     description=description,
     article=article,
-    theme="JohnSmith9982/small_and_pretty",
+    theme="Glass",
     flagging_mode="never",
 )
 interface.launch(debug=False)

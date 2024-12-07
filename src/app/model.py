@@ -18,7 +18,7 @@ load_dotenv()
 access_token = os.environ.get("ACCESS_TOKEN")
 
 
-def load_model_and_tokenizer(model_name: str, device: str) -> Any:
+def load_model_tokenizer_and_processor(model_name: str, device: str) -> Any:
     """
     Load the model, tokenizer and processor.
 
@@ -40,22 +40,21 @@ def load_model_and_tokenizer(model_name: str, device: str) -> Any:
             torch_dtype=torch.bfloat16,
             token=access_token
         )
-        model = model.to(device=device)
+        model = model.eval().to(device=device)
         tokenizer = AutoTokenizer.from_pretrained(
             model_name, trust_remote_code=True, token=access_token
         )
         processor = AutoProcessor.from_pretrained(
             model_name, trust_remote_code=True, token=access_token
         )
-        model.eval()
 
-        # Log the successful loading of the model and tokenizer
-        logging.info("Model and tokenizer loaded successfully.")
+        # Log the successful loading of the model, tokenizer and processor
+        logging.info("Model, tokenizer and processor loaded successfully.")
 
         # Return the model, tokenizer and processor
         return model, tokenizer, processor
 
-    # Handle exceptions that may occur during model and tokenizer loading
+    # Handle exceptions that may occur during model, tokenizer and processor loading
     except Exception as e:
         # Custom exception handling
         raise CustomExceptionHandling(e, sys) from e

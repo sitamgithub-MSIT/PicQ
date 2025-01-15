@@ -1,6 +1,6 @@
 # PicQ
 
-Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [**MiniCPM-o 2.6**](https://huggingface.co/openbmb/MiniCPM-o-2_6) from the Hugging Face model hub.
+Visual Question Answering is answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [**MiniCPM-o 2.6**](https://huggingface.co/openbmb/MiniCPM-o-2_6) from the Hugging Face model hub.
 
 [**MiniCPM-o 2.6**](https://huggingface.co/openbmb/MiniCPM-o-2_6) is the latest and most capable model in the MiniCPM-o series, built on **SigLip-400M**, **Whisper-medium-300M**, **ChatTTS-200M**, and **Qwen2.5-7B** with a total of 8B parameters. MiniCPM-o 2.6 significantly improves upon its predecessor, boasting advanced real-time speech conversation and multimodal live streaming capabilities. It surpasses proprietary models in visual and speech understanding, offers efficient processing, and provides easy usage options.
 
@@ -8,11 +8,11 @@ Visual Question Answering is the task of answering open-ended questions based on
 
 The project is structured as follows:
 
-- `src\`: The folder that contains the source code for the project.
+- `src\`: The folder containing the project's source code.
 
   - `minicpm\`: The folder containing the source code for the application's main functionality.
 
-    - `model.py`: The file that contains the code for loading the model, tokenizer and processor.
+    - `model.py`: The file that contains the code for loading the model, tokenizer, and processor.
     - `response.py`: The file that contains the function for generating the response for the input image and question.
 
   - `config.py`: This file contains the configuration for the used model.
@@ -23,7 +23,7 @@ The project is structured as follows:
 - `requirements.txt`: The file containing the project's required dependencies.
 - `LICENSE`: The license file for the project.
 - `README.md`: The README file that contains information about the project.
-- `assets`: The folder that contains the screenshots for working on the application.
+- `assets`: The folder containing screenshots for working on the application.
 - `images`: The folder that contains the images for testing the application.
 
 ## Tech Stack

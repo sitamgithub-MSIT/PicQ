@@ -3,7 +3,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 import gradio as gr
-from src.app.response import describe_image
+from src.minicpm.response import describe_image
 
 
 # Image, text query, and input parameters
@@ -49,8 +49,8 @@ examples = [
 
 # Title, description, and article for the interface
 title = "Visual Question Answering"
-description = "Gradio Demo for the MiniCPM-V 2.6 Vision Language Understanding and Generation model. This model can answer questions about images in natural language. To use it, upload your image, type a question, select associated parameters, use the default values, click 'Submit', or click one of the examples to load them. You can read more at the links below."
-article = "<p style='text-align: center'><a href='https://github.com/OpenBMB/MiniCPM-V' target='_blank'>Model GitHub Repo</a> | <a href='https://huggingface.co/openbmb/MiniCPM-V-2_6' target='_blank'>Model Page</a></p>"
+description = "Gradio Demo for the MiniCPM-o 2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming. This model can answer questions about images in natural language. To use it, upload your image, type a question, select associated parameters, use the default values, click 'Submit', or click one of the examples to load them. You can read more at the links below."
+article = "<p style='text-align: center'><a href='https://github.com/OpenBMB/MiniCPM-o' target='_blank'>Model GitHub Repo</a> | <a href='https://huggingface.co/openbmb/MiniCPM-o-2_6' target='_blank'>Model Page</a></p>"
 
 
 # Launch the interface

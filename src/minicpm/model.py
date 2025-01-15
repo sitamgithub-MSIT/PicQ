@@ -38,6 +38,9 @@ def load_model_tokenizer_and_processor(model_name: str, device: str) -> Any:
             trust_remote_code=True,
             attn_implementation="sdpa",
             torch_dtype=torch.bfloat16,
+            init_vision=True,
+            init_audio=False,
+            init_tts=False,
             token=access_token
         )
         model = model.eval().to(device=device)

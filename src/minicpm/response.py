@@ -11,7 +11,7 @@ from src.config import (
     stream,
     repetition_penalty,
 )
-from src.app.model import load_model_tokenizer_and_processor
+from src.minicpm.model import load_model_tokenizer_and_processor
 from src.logger import logging
 from src.exception import CustomExceptionHandling
 

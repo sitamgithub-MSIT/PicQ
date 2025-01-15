@@ -1,8 +1,8 @@
 # PicQ
 
-Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [**MiniCPM-V-2_6**](https://huggingface.co/openbmb/MiniCPM-V-2_6) from the Hugging Face model hub for visual question answering.
+Visual Question Answering is the task of answering open-ended questions based on an image. They output natural language responses to natural language questions about the content of an image. This project uses one of the popular multimodal models, [**MiniCPM-o 2.6**](https://huggingface.co/openbmb/MiniCPM-o-2_6) from the Hugging Face model hub.
 
-[**MiniCPM-V-2_6**](https://huggingface.co/openbmb/MiniCPM-V-2_6) is the latest model in the MiniCPM-V series, built on **SigLip-400M** and **Qwen2-7B** with a total of 8B parameters. It introduces new features for multi-image and video understanding. It also supports multilingual capabilities and produces fewer tokens than most models, improving inference speed, first-token latency, memory usage, and power consumption. It is easy to use in various ways, including CPU inference, quantized models, and online demos.
+[**MiniCPM-o 2.6**](https://huggingface.co/openbmb/MiniCPM-o-2_6) is the latest and most capable model in the MiniCPM-o series, built on **SigLip-400M**, **Whisper-medium-300M**, **ChatTTS-200M**, and **Qwen2.5-7B** with a total of 8B parameters. MiniCPM-o 2.6 significantly improves upon its predecessor, boasting advanced real-time speech conversation and multimodal live streaming capabilities. It surpasses proprietary models in visual and speech understanding, offers efficient processing, and provides easy usage options.
 
 ## Project Structure
 
@@ -10,9 +10,9 @@ The project is structured as follows:
 
 - `src\`: The folder that contains the source code for the project.
 
-  - `app\`: The folder containing the source code for the application's main functionality.
+  - `minicpm\`: The folder containing the source code for the application's main functionality.
 
-    - `model.py`: The file that contains the code for loading the model and the tokenizer.
+    - `model.py`: The file that contains the code for loading the model, tokenizer and processor.
     - `response.py`: The file that contains the function for generating the response for the input image and question.
 
   - `config.py`: This file contains the configuration for the used model.
@@ -49,7 +49,7 @@ Now, open up your local host and see the web application running. For more infor
 
 **Note**: You need a Hugging Face access token to run the application. You can get the token by signing up on the Hugging Face website and creating a new token from the settings page. After getting the token, you can set it as an environment variable `ACCESS_TOKEN` in your system by creating a `.env` file in the project's root directory. Check the `.env.example` file for reference.
 
-The application is hosted on Hugging Face Spaces running on a GPU. You are expected to have a GPU for local use when running the application. If you do not have a GPU, you can explore the CPU inference option provided by the model [here](https://huggingface.co/collections/openbmb/minicpm-65d48bf958302b9fd25b698f).
+The application is hosted on Hugging Face Spaces running on a GPU. You are expected to have a GPU for local use when running the application. If you do not have a GPU, you can explore the local inference option provided by the model [here](https://github.com/OpenBMB/llama.cpp/blob/minicpm-omni/examples/llava/README-minicpmo2.6.md).
 
 ## Usage
 
